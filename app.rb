@@ -32,7 +32,7 @@ class App < Sinatra::Base
       @string << v 
     end
     "#{@string.join(" ")}."
-binding.pry
+# binding.pry
   end
   
   get '/:operation/:number1/:number2' do
