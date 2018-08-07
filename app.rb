@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require 'pry'
 
 class App < Sinatra::Base
   # Write your code here!
@@ -31,7 +32,7 @@ class App < Sinatra::Base
       @string << v 
     end
     "#{@string.flatten}."
-    
+binding.pry
   end
   
   get '/:operation/:number1/:number2' do
