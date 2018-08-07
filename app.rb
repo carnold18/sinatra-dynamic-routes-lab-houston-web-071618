@@ -30,7 +30,7 @@ class App < Sinatra::Base
     params.each do |k,v|
       @string << v 
     end
-    "#{@string.flatten}"
+    "#{@string.flatten}."
     
   end
   
